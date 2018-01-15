@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string.h>
+#include<fstream>
+using namespace std;
+
+int main()
+{
+ char a[100];
+ int i;
+ fstream f>("input.txt");
+ f>>a[i];
+//cout<<"Sirul: ";
+//cin.get(a,99);
+
+     for(i=0;i<strlen(a);i++)
+    if(a[i]>='a'&&a[i]<='z'||a[i]>='A'&&a[i]<='Z')
+f<<a[i];
+ //cout<<a[i];
+// cout<<endl;
+f.close();
+ return 0;
+}
